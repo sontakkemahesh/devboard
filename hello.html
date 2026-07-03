@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevBoard</title>
+  <script src="https://tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-tr from-slate-950 via-purple-950 to-slate-900 text-slate-200 min-h-screen font-sans antialiased p-6 flex flex-col items-center">
+  <header class="w-full max-w-4xl flex justify-between items-center mb-8 pb-4 border-b border-purple-900/30">
+    <h1 class="text-xl font-bold tracking-tight bg-gradient-to-r from-purple-400 to-indigo-300 bg-clip-text text-transparent">🔮 DevBoard</h1>
+    <button class="bg-purple-600 hover:bg-purple-500 text-xs font-semibold px-3 py-1.5 rounded transition-all">+ Task</button>
+  </header>
+  <main class="w-full max-w-4xl grid md:grid-cols-3 gap-4 flex-1">
+    <div class="bg-slate-900/40 border border-purple-900/20 rounded-xl p-4 flex flex-col gap-3">
+      <div class="flex justify-between items-center text-xs text-purple-300 font-mono tracking-wider border-b border-purple-900/20 pb-2"><span>// TODO</span><span class="bg-purple-950 px-2 py-0.5 rounded-full text-[10px]">2</span></div>
+      <div class="bg-slate-950/80 p-3 rounded border border-purple-900/30 hover:border-purple-500/40 transition-colors cursor-pointer">
+        <div class="text-[10px] text-purple-400 font-mono mb-1">#04 · CRITICAL</div>
+        <h3 class="text-sm font-medium">Patch JWT vulnerability</h3>
+      </div>
+      <div class="bg-slate-950/80 p-3 rounded border border-purple-900/30 hover:border-purple-500/40 transition-colors cursor-pointer">
+        <div class="text-[10px] text-slate-500 font-mono mb-1">#05 · LOW</div>
+        <h3 class="text-sm font-medium">Clean stale docker volumes</h3>
+      </div>
+    </div>
+    <div class="bg-slate-900/40 border border-purple-900/20 rounded-xl p-4 flex flex-col gap-3">
+      <div class="flex justify-between items-center text-xs text-purple-300 font-mono tracking-wider border-b border-purple-900/20 pb-2"><span>// WIP</span><span class="bg-purple-950 px-2 py-0.5 rounded-full text-[10px]">1</span></div>
+      <div class="bg-slate-950/80 p-3 rounded border border-purple-500/40 shadow-sm shadow-purple-950/50 cursor-pointer">
+        <div class="text-[10px] text-amber-400 font-mono mb-1">#02 · HIGH</div>
+        <h3 class="text-sm font-medium text-purple-200">Refactor Redis pool allocation</h3>
+      </div>
+    </div>
+    <div class="bg-slate-900/40 border border-purple-900/20 rounded-xl p-4 flex flex-col gap-3">
+      <div class="flex justify-between items-center text-xs text-purple-300 font-mono tracking-wider border-b border-purple-900/20 pb-2"><span>// DONE</span><span class="bg-purple-950 px-2 py-0.5 rounded-full text-[10px]">1</span></div>
+      <div class="bg-slate-950/30 p-3 rounded border border-purple-900/10 opacity-40">
+        <div class="text-[10px] text-slate-500 font-mono mb-1 line-through">#01 · DONE</div>
+        <h3 class="text-sm font-medium line-through text-slate-400">Setup CI/CD pipeline</h3>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
